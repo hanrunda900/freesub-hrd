@@ -7,9 +7,7 @@
       "outbounds": [
         "auto",
         "🇨🇿 CZ 01 - hrd900",
-        "🇨🇿 CZ 02 - hrd900",
-        "🇨🇿 CZ 03 - hrd900",
-        "🇨🇿 CZ 04 - hrd900"
+        "🇨🇿 CZ 02 - hrd900"
       ]
     },
     {
@@ -17,9 +15,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 CZ 01 - hrd900",
-        "🇨🇿 CZ 02 - hrd900",
-        "🇨🇿 CZ 03 - hrd900",
-        "🇨🇿 CZ 04 - hrd900"
+        "🇨🇿 CZ 02 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
