@@ -6,16 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇩 ID 01 - hrd900",
-        "🇮🇩 ID 02 - hrd900"
+        "🇰🇿 KZ 01 - hrd900",
+        "🇰🇿 KZ 02 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇩 ID 01 - hrd900",
-        "🇮🇩 ID 02 - hrd900"
+        "🇰🇿 KZ 01 - hrd900",
+        "🇰🇿 KZ 02 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
