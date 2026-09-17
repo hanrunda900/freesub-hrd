@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 IE 01 - hrd900"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 IE 01 - hrd900"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
