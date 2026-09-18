@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 VN 01 - hrd900",
-        "🇻🇳 VN 02 - hrd900",
-        "🇻🇳 VN 03 - hrd900"
+        "🇫🇮 FI 01 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 VN 01 - hrd900",
-        "🇻🇳 VN 02 - hrd900",
-        "🇻🇳 VN 03 - hrd900"
+        "🇫🇮 FI 01 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
