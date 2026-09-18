@@ -19,18 +19,17 @@ proxies:
       Host: 189.74.97.47
 - name: 🇺🇿 UZ 02 - hrd900
   type: vless
-  server: 172.64.95.237
-  port: 443
-  uuid: 50414e45-4c5f-5a45-5553-565221666bd1
+  server: 189.74.97.43
+  port: 2087
+  uuid: 10f7eb2d-d96d-4778-9d36-aff11e9d6629
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: mczrh5e3u5ps.shoameny.workers.dev
   network: ws
   ws-opts:
-    path: /stream/PANEL_ZEUS/565221666bd1/loc-5
+    path: /73b6faea2d00
     headers:
-      Host: mczrh5e3u5ps.shoameny.workers.dev
+      Host: 189.74.97.43
 proxy-groups:
 - name: PROXIES
   type: select
