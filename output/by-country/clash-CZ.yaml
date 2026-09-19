@@ -20,7 +20,35 @@ proxies:
       Host: nb.lovecf.ggff.net
 - name: 🇨🇿 CZ 02 - hrd900
   type: vless
-  server: 195.85.23.252
+  server: 195.85.23.219
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 03 - hrd900
+  type: vless
+  server: 195.85.23.88
+  port: 443
+  uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: nb.lovecf.ggff.net
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: nb.lovecf.ggff.net
+- name: 🇨🇿 CZ 04 - hrd900
+  type: vless
+  server: 195.85.23.217
   port: 443
   uuid: b09dfed1-90fa-4353-8bdf-de1edb2e2d79
   udp: true
@@ -39,6 +67,8 @@ proxy-groups:
   - AUTO
   - 🇨🇿 CZ 01 - hrd900
   - 🇨🇿 CZ 02 - hrd900
+  - 🇨🇿 CZ 03 - hrd900
+  - 🇨🇿 CZ 04 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -46,5 +76,7 @@ proxy-groups:
   proxies:
   - 🇨🇿 CZ 01 - hrd900
   - 🇨🇿 CZ 02 - hrd900
+  - 🇨🇿 CZ 03 - hrd900
+  - 🇨🇿 CZ 04 - hrd900
 rules:
 - MATCH,PROXIES
