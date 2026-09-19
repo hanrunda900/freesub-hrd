@@ -4,32 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - hrd900
+- name: 🇺🇸 美国 (United States) 01 (家宽) - hrd900
   type: vless
-  server: 104.19.215.97
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 172.64.42.85
+  port: 2095
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇺🇸 美国 (United States) 02 (家宽) - hrd900
-  type: ss
-  server: 23.252.104.131
-  port: 54321
-  cipher: aes-256-gcm
-  password: Proxy2024
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hrd900
   type: vless
-  server: 60.248.219.78
+  server: 60.248.219.52
   port: 443
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: f265b49a-70a3-407a-b17b-e45dfb9f255c
   udp: true
   tls: true
   skip-cert-verify: true
@@ -38,21 +30,8 @@ proxies:
   ws-opts:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
-      Host: 60.248.219.78
-- name: 🇺🇸 美国 (United States) 04 (家宽) - hrd900
-  type: vless
-  server: 188.114.97.6
-  port: 2052
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - hrd900
+      Host: 60.248.219.52
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
   type: vmess
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
@@ -62,27 +41,13 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  servername: ''
   network: ws
   ws-opts:
-    path: /
+    path: ''
     headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - hrd900
-  type: ss
-  server: 36.224.185.143
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hrd900
-  type: ss
-  server: 36.224.185.173
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - hrd900
+      Host: ''
+- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - hrd900
   type: vless
   server: 172.64.53.42
   port: 2087
@@ -96,7 +61,7 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - hrd900
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - hrd900
   type: vless
   server: 104.18.42.54
   port: 2087
@@ -110,49 +75,55 @@ proxies:
     path: ?ed=2560
     headers:
       Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
-- name: 🇰🇷 韩国 (South Korea) 10 (家宽) - hrd900
+- name: 🇺🇸 美国 (United States) 06 (家宽) - hrd900
   type: vless
-  server: 172.64.53.60
-  port: 2087
-  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  server: 162.159.0.169
+  port: 8880
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
   network: ws
   ws-opts:
-    path: ?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: faxf32gkfzoxqv.fx6hsv0.ccwu.cc
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇰🇷 韩国 (South Korea) 07 (家宽) - hrd900
+  type: vless
+  server: 172.66.132.196
+  port: 8880
+  uuid: 2efeba50-78fe-4729-9821-1fb9819ed9e8
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+    headers:
+      Host: dark-dew-c3ed.48-97c.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - hrd900
-  - 🇺🇸 美国 (United States) 02 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 01 (家宽) - hrd900
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hrd900
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
-  - 🇺🇸 美国 (United States) 04 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 06 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - hrd900
-  - 🇺🇸 美国 (United States) 02 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 01 (家宽) - hrd900
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - hrd900
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
-  - 🇺🇸 美国 (United States) 04 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 08 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - hrd900
-  - 🇰🇷 韩国 (South Korea) 10 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 04 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 06 (家宽) - hrd900
+  - 🇰🇷 韩国 (South Korea) 07 (家宽) - hrd900
 rules:
 - MATCH,PROXIES
