@@ -6,18 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇺 HU 01 - hrd900",
-        "🇭🇺 HU 02 - hrd900",
-        "🇭🇺 HU 03 - hrd900"
+        "🇭🇺 HU 01 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇺 HU 01 - hrd900",
-        "🇭🇺 HU 02 - hrd900",
-        "🇭🇺 HU 03 - hrd900"
+        "🇭🇺 HU 01 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
