@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 CZ 01 - hrd900"
+        "🇮🇪 IE 01 - hrd900",
+        "🇮🇪 IE 02 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 CZ 01 - hrd900"
+        "🇮🇪 IE 01 - hrd900",
+        "🇮🇪 IE 02 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
