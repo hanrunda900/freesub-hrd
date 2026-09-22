@@ -5,32 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hrd900
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: uez5t2b4575tgkoi
+  type: vless
+  server: 216.23.84.115
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
-  type: vmess
-  server: 89.223.95.77
-  port: 22324
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
-  type: ss
-  server: sth.free-outline.giize.com
-  port: 1081
-  cipher: chacha20-ietf-poly1305
-  password: r6tptrwvddxap6al
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
+  type: vless
+  server: 216.23.84.115
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: shuma.ccwu.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
+  type: vless
+  server: 103.118.41.121
+  port: 443
+  uuid: c18b978e-1c4e-415c-8bea-07942b563a64
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: shuma.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: shuma.ccwu.cc
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - hrd900
   type: vless
-  server: 104.21.8.201
+  server: 172.67.130.159
   port: 2096
   uuid: ecb9ab47-31aa-4dd9-92eb-191047b353bd
   udp: true
@@ -80,6 +98,32 @@ proxies:
     path: /f7i3lo6xbs
     headers:
       Host: cdn-hk.skyvora.app
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - hrd900
+  type: vless
+  server: 195.58.144.56
+  port: 11907
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: 195.58.144.56
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - hrd900
+  type: vmess
+  server: 89.223.95.77
+  port: 22324
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - hrd900
+  type: ss
+  server: 103.136.150.119
+  port: 10090
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +136,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 06 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 07 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 08 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 09 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 10 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -104,5 +151,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 06 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 07 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 08 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 09 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 10 - hrd900
 rules:
 - MATCH,PROXIES
