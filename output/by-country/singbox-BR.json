@@ -6,16 +6,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - hrd900",
-        "🇹🇷 土耳其 (Turkey) 02 - hrd900"
+        "🇧🇷 BR 01 - hrd900",
+        "🇧🇷 BR 02 - hrd900",
+        "🇧🇷 BR 03 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - hrd900",
-        "🇹🇷 土耳其 (Turkey) 02 - hrd900"
+        "🇧🇷 BR 01 - hrd900",
+        "🇧🇷 BR 02 - hrd900",
+        "🇧🇷 BR 03 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
