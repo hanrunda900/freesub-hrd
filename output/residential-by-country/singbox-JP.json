@@ -6,14 +6,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - hrd900"
+        "🇯🇵 日本 (Japan) 01 (家宽) - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - hrd900"
+        "🇯🇵 日本 (Japan) 01 (家宽) - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },

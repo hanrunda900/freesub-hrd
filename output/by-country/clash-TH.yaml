@@ -27,7 +27,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇹🇭 TH 03 - hrd900
   type: vless
   server: 34.15.162.1
@@ -39,7 +39,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇹🇭 TH 04 - hrd900
   type: vless
   server: 34.15.162.1
@@ -51,7 +51,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
 - name: 🇹🇭 TH 05 - hrd900
   type: vless
   server: 34.15.162.1
@@ -66,6 +66,20 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇭 TH 06 - hrd900
   type: vless
+  server: 104.16.10.185
+  port: 443
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: v2ray.simspeedup.com
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 TH 07 - hrd900
+  type: vless
   server: 34.15.162.1
   port: 443
   uuid: 2b1d0c2a-9c80-4b72-892e-93d0500b9210
@@ -75,19 +89,7 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇹🇭 TH 07 - hrd900
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
 - name: 🇹🇭 TH 08 - hrd900
   type: vless
   server: 34.15.162.1
@@ -99,8 +101,21 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
 - name: 🇹🇭 TH 09 - hrd900
+  type: vless
+  server: 103.86.49.57
+  port: 80
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 TH 10 - hrd900
   type: vless
   server: 34.15.162.1
   port: 443
@@ -110,18 +125,6 @@ proxies:
   skip-cert-verify: true
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇹🇭 TH 10 - hrd900
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇹🇭 TH 11 - hrd900
@@ -135,20 +138,8 @@ proxies:
   reality-opts:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
-  client-fingerprint: edge
+  client-fingerprint: ios
 - name: 🇹🇭 TH 12 - hrd900
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇹🇭 TH 13 - hrd900
   type: vless
   server: 34.15.162.1
   port: 443
@@ -160,45 +151,6 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇹🇭 TH 14 - hrd900
-  type: vless
-  server: 103.86.49.57
-  port: 80
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 TH 15 - hrd900
-  type: vless
-  server: 104.16.10.185
-  port: 443
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: v2ray.simspeedup.com
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
-- name: 🇹🇭 TH 16 - hrd900
-  type: vless
-  server: 34.15.176.240
-  port: 443
-  uuid: 742dc674-a491-4a42-a551-b3ea6dd2f447
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: Euq607wb-KZNjbuOMQ1h646C3dm_Q-ntd7yxZ52jj0U
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -216,10 +168,6 @@ proxy-groups:
   - 🇹🇭 TH 10 - hrd900
   - 🇹🇭 TH 11 - hrd900
   - 🇹🇭 TH 12 - hrd900
-  - 🇹🇭 TH 13 - hrd900
-  - 🇹🇭 TH 14 - hrd900
-  - 🇹🇭 TH 15 - hrd900
-  - 🇹🇭 TH 16 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -237,9 +185,5 @@ proxy-groups:
   - 🇹🇭 TH 10 - hrd900
   - 🇹🇭 TH 11 - hrd900
   - 🇹🇭 TH 12 - hrd900
-  - 🇹🇭 TH 13 - hrd900
-  - 🇹🇭 TH 14 - hrd900
-  - 🇹🇭 TH 15 - hrd900
-  - 🇹🇭 TH 16 - hrd900
 rules:
 - MATCH,PROXIES
