@@ -5,6 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - hrd900
+  type: ss
+  server: 36.224.141.124
+  port: 50099
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  udp: true
+- name: 🇺🇸 美国 (United States) 02 (家宽) - hrd900
+  type: vless
+  server: 172.64.53.55
+  port: 80
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
   type: vless
   server: 59.125.69.24
   port: 443
@@ -18,55 +38,21 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: 59.125.69.24
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - hrd900
-  type: vless
-  server: 104.18.30.170
-  port: 8880
-  uuid: b85c8be2-3109-4b8a-aa82-f0d8fe06f5ae
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /pyip=ProxyIP.JP.CMLiussss.net
-    headers:
-      Host: young-dust-b8d9.31-8ba.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
-  type: ss
-  server: 36.224.141.124
-  port: 50099
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-  udp: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - hrd900
-  type: vless
-  server: 118.167.206.152
-  port: 24215
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - hrd900
-  - 🇯🇵 日本 (Japan) 02 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 02 (家宽) - hrd900
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - hrd900
-  - 🇯🇵 日本 (Japan) 02 (家宽) - hrd900
+  - 🇺🇸 美国 (United States) 02 (家宽) - hrd900
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - hrd900
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - hrd900
 rules:
 - MATCH,PROXIES
