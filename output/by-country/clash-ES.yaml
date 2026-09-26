@@ -18,41 +18,18 @@ proxies:
   client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 02 - hrd900
   type: ss
+  server: 140.174.184.5
+  port: 8388
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+  udp: true
+- name: 🇪🇸 西班牙 (Spain) 03 - hrd900
+  type: ss
   server: 108.181.121.226
   port: 8388
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
   udp: true
-- name: 🇪🇸 西班牙 (Spain) 03 - hrd900
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 04 - hrd900
-  type: ss
-  server: 140.174.184.5
-  port: 8388
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
-  udp: true
-- name: 🇪🇸 西班牙 (Spain) 05 - hrd900
-  type: vmess
-  server: mygptagent.org
-  port: 443
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: ''
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,8 +38,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - hrd900
   - 🇪🇸 西班牙 (Spain) 02 - hrd900
   - 🇪🇸 西班牙 (Spain) 03 - hrd900
-  - 🇪🇸 西班牙 (Spain) 04 - hrd900
-  - 🇪🇸 西班牙 (Spain) 05 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -71,7 +46,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01 - hrd900
   - 🇪🇸 西班牙 (Spain) 02 - hrd900
   - 🇪🇸 西班牙 (Spain) 03 - hrd900
-  - 🇪🇸 西班牙 (Spain) 04 - hrd900
-  - 🇪🇸 西班牙 (Spain) 05 - hrd900
 rules:
 - MATCH,PROXIES
