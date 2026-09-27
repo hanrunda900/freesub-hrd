@@ -5,27 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hrd900
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: ziOeKejhhw+fmWet+xvuJsVJH7U9DvSWq1hlqtaKv+I=
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 02 - hrd900
   type: vless
-  server: 8.47.69.9
+  server: 62.152.58.182
   port: 443
-  uuid: 11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf
+  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV
+  reality-opts:
+    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
+  servername: 360.yandex.ru
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 02 - hrd900
+  type: vless
+  server: 185.229.9.157
+  port: 443
+  uuid: 9e4f675b-d6bf-42d1-be55-389f622783af
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: JBKJlzuJH1YzDHAoz28wEKbzWTGpDpKjgtSq0oT0a0k
+  servername: 360.yandex.ru
+  client-fingerprint: safari
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hrd900
+  type: vless
+  server: 172.64.32.108
+  port: 2082
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  udp: true
+  tls: false
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    path: /?ed=2560security=tls
     headers:
-      Host: ancient-heart-60c5.dpccgizieb.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hrd900
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hrd900
   type: vless
   server: fbsv6.guardora.pro
   port: 443
@@ -47,6 +63,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 02 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 03 - hrd900
+  - 🇷🇺 俄罗斯 (Russia) 04 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -55,5 +72,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 02 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 03 - hrd900
+  - 🇷🇺 俄罗斯 (Russia) 04 - hrd900
 rules:
 - MATCH,PROXIES
