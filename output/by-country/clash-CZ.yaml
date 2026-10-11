@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 BR 01 - hrd900
+- name: 🇨🇿 CZ 01 - hrd900
   type: vless
-  server: 35.199.90.53
-  port: 443
-  uuid: 5e517b94-e207-47ee-be3c-3020a57594e8
+  server: 104.21.55.229
+  port: 8880
+  uuid: f55a75a7-5aa6-4df7-814a-99da0edb5c86
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: autumn-cloud-ab5e.229-601.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 BR 01 - hrd900
+  - 🇨🇿 CZ 01 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 BR 01 - hrd900
+  - 🇨🇿 CZ 01 - hrd900
 rules:
 - MATCH,PROXIES
