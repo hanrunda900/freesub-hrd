@@ -18,17 +18,33 @@ proxies:
     path: /
     headers:
       Host: ccc.010304.xyz
+- name: 🇮🇪 IE 02 - hrd900
+  type: vless
+  server: cf.090227.xyz
+  port: 443
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: lucasjow.us.ci
+  network: ws
+  ws-opts:
+    path: /cart/docs/www/proxyip
+    headers:
+      Host: lucasjow.us.ci
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇪 IE 01 - hrd900
+  - 🇮🇪 IE 02 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 IE 01 - hrd900
+  - 🇮🇪 IE 02 - hrd900
 rules:
 - MATCH,PROXIES
