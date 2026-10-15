@@ -12,15 +12,16 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  servername: 2.26.225.89
 - name: 🇵🇱 PL 02 - hrd900
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+  server: 2.26.225.89
+  port: 8443
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 03 - hrd900
   type: vless
   server: 2.26.225.89
@@ -29,7 +30,7 @@ proxies:
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: 2.26.225.89
+  servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 04 - hrd900
   type: vless
   server: 2.26.225.89
@@ -41,13 +42,16 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 05 - hrd900
   type: vless
-  server: 2.26.225.89
-  port: 8443
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  server: pl4.h1cloud.net
+  port: 25080
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: pl.flen-vpn.xyz
+  reality-opts:
+    public-key: CMAkhR1kevtK85rK9B5nmQtFZATsLOIq6nuG83BA8lI
+  servername: www.ceneo.pl
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
