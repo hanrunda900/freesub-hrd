@@ -6,14 +6,28 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 LK 01 - hrd900"
+        "🇱🇰 LK 01 - hrd900",
+        "🇱🇰 LK 02 - hrd900",
+        "🇱🇰 LK 03 - hrd900",
+        "🇱🇰 LK 04 - hrd900",
+        "🇱🇰 LK 05 - hrd900",
+        "🇱🇰 LK 06 - hrd900",
+        "🇱🇰 LK 07 - hrd900",
+        "🇱🇰 LK 08 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 LK 01 - hrd900"
+        "🇱🇰 LK 01 - hrd900",
+        "🇱🇰 LK 02 - hrd900",
+        "🇱🇰 LK 03 - hrd900",
+        "🇱🇰 LK 04 - hrd900",
+        "🇱🇰 LK 05 - hrd900",
+        "🇱🇰 LK 06 - hrd900",
+        "🇱🇰 LK 07 - hrd900",
+        "🇱🇰 LK 08 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
