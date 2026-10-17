@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 IS 01 - hrd900
+- name: 🇺🇦 UA 01 - hrd900
   type: ss
-  server: b2a2.velqixa.ir
-  port: 39221
-  cipher: chacha20-ietf-poly1305
-  password: Pzlcb_PeV3uRgiC2NNoNKw
+  server: 185.164.175.81
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   udp: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 IS 01 - hrd900
+  - 🇺🇦 UA 01 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 IS 01 - hrd900
+  - 🇺🇦 UA 01 - hrd900
 rules:
 - MATCH,PROXIES
