@@ -15,21 +15,13 @@ proxies:
   servername: pl.flen-vpn.xyz
 - name: 🇵🇱 PL 02 - hrd900
   type: vless
-  server: milo.rubinaz.xyz
-  port: 8080
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇵🇱 PL 03 - hrd900
-  type: vless
   server: site.teslamotor.site
   port: 20001
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇵🇱 PL 04 - hrd900
+- name: 🇵🇱 PL 03 - hrd900
   type: vless
   server: edge10.cyrionflare.com
   port: 2052
@@ -45,7 +37,6 @@ proxy-groups:
   - 🇵🇱 PL 01 - hrd900
   - 🇵🇱 PL 02 - hrd900
   - 🇵🇱 PL 03 - hrd900
-  - 🇵🇱 PL 04 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,6 +45,5 @@ proxy-groups:
   - 🇵🇱 PL 01 - hrd900
   - 🇵🇱 PL 02 - hrd900
   - 🇵🇱 PL 03 - hrd900
-  - 🇵🇱 PL 04 - hrd900
 rules:
 - MATCH,PROXIES
