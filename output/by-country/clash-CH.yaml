@@ -23,20 +23,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
   udp: true
-- name: 🇨🇭 CH 03 - hrd900
-  type: vless
-  server: 80.240.18.227
-  port: 10051
-  uuid: d161dcf1-fde2-44cc-b08d-d8944895e842
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +30,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 CH 01 - hrd900
   - 🇨🇭 CH 02 - hrd900
-  - 🇨🇭 CH 03 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -52,6 +37,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 CH 01 - hrd900
   - 🇨🇭 CH 02 - hrd900
-  - 🇨🇭 CH 03 - hrd900
 rules:
 - MATCH,PROXIES
