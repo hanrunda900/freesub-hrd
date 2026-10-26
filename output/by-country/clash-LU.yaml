@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 CY 01 - hrd900
+- name: 🇱🇺 LU 01 - hrd900
   type: vless
-  server: 5.253.29.254
-  port: 14430
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  server: 107.189.7.176
+  port: 32752
+  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.253.29.254
+  reality-opts:
+    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 CY 01 - hrd900
+  - 🇱🇺 LU 01 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 CY 01 - hrd900
+  - 🇱🇺 LU 01 - hrd900
 rules:
 - MATCH,PROXIES

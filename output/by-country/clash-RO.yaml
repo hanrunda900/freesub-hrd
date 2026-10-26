@@ -36,6 +36,13 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇷🇴 RO 05 - hrd900
+  type: ss
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +52,7 @@ proxy-groups:
   - 🇷🇴 RO 02 - hrd900
   - 🇷🇴 RO 03 - hrd900
   - 🇷🇴 RO 04 - hrd900
+  - 🇷🇴 RO 05 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -54,5 +62,6 @@ proxy-groups:
   - 🇷🇴 RO 02 - hrd900
   - 🇷🇴 RO 03 - hrd900
   - 🇷🇴 RO 04 - hrd900
+  - 🇷🇴 RO 05 - hrd900
 rules:
 - MATCH,PROXIES
