@@ -7,6 +7,18 @@ proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - hrd900
   type: vless
   server: 103.238.227.211
+  port: 21003
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
+  type: vless
+  server: 103.238.227.211
   port: 21002
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
@@ -16,7 +28,7 @@ proxies:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
   type: vmess
   server: 47.243.65.243
   port: 443
@@ -32,7 +44,19 @@ proxies:
     path: /ws-vmess
     headers:
       Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - hrd900
+  type: vless
+  server: 526.150333.xyz
+  port: 21003
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - hrd900
   type: vmess
   server: 47.243.153.153
   port: 443
@@ -48,10 +72,10 @@ proxies:
     path: /ws-vmess
     headers:
       Host: i2psm3knof5qjjix.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - hrd900
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - hrd900
   type: vless
-  server: 103.238.227.211
-  port: 21003
+  server: 526.150333.xyz
+  port: 21002
   uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
   udp: true
   tls: true
@@ -59,7 +83,7 @@ proxies:
   reality-opts:
     public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +93,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 04 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 05 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 06 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -78,5 +104,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 02 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 03 - hrd900
   - 🇭🇰 中国香港 (Hong Kong) 04 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 05 - hrd900
+  - 🇭🇰 中国香港 (Hong Kong) 06 - hrd900
 rules:
 - MATCH,PROXIES
