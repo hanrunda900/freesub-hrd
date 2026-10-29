@@ -8,7 +8,8 @@
         "auto",
         "🇨🇳 CN 01 - hrd900",
         "🇨🇳 CN 02 - hrd900",
-        "🇨🇳 CN 03 - hrd900"
+        "🇨🇳 CN 03 - hrd900",
+        "🇨🇳 CN 04 - hrd900"
       ]
     },
     {
@@ -17,7 +18,8 @@
       "outbounds": [
         "🇨🇳 CN 01 - hrd900",
         "🇨🇳 CN 02 - hrd900",
-        "🇨🇳 CN 03 - hrd900"
+        "🇨🇳 CN 03 - hrd900",
+        "🇨🇳 CN 04 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
