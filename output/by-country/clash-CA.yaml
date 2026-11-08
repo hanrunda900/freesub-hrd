@@ -5,68 +5,83 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 149.22.95.183
+  port: 443
+  cipher: aes-128-gcm
+  password: shadowsocks
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 02 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 162.159.130.234
+  port: 2096
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vp8.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /p
+    headers:
+      Host: vp8.1145678.xyz
 - name: 🇨🇦 加拿大 (Canada) 03 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 04 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 104.18.1.1
+  port: 2083
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vlsovip.1d.mom
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vlsovip.1d.mom
 - name: 🇨🇦 加拿大 (Canada) 05 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 162.159.130.234
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: vp5.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /servicefp
+    headers:
+      Host: vp5.1145678.xyz
 - name: 🇨🇦 加拿大 (Canada) 06 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 185.193.29.123
+  port: 443
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: notls.lukongtou.eu.org
+  network: ws
+  ws-opts:
+    path: Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 - name: 🇨🇦 加拿大 (Canada) 07 - hrd900
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -76,7 +91,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 08 - hrd900
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -86,7 +101,7 @@ proxies:
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 09 - hrd900
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -95,15 +110,22 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 10 - hrd900
-  type: ss
-  server: 158.51.121.221
-  port: 19999
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp22.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /m/club/seasons
+    headers:
+      Host: vp22.1145678.xyz
 - name: 🇨🇦 加拿大 (Canada) 11 - hrd900
   type: vmess
-  server: 134.195.196.211
+  server: 23.162.200.198
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -122,15 +144,18 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 13 - hrd900
-  type: ss
-  server: 51.222.12.127
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 14 - hrd900
   type: vmess
-  server: 23.162.200.198
+  server: 134.195.196.211
   port: 18000
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
@@ -139,47 +164,47 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 15 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.222.136.236
+  port: 8882
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 16 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 17 - hrd900
   type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 18 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  servername: vp12.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /torrent/documents/photos
+    headers:
+      Host: vp12.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 17 - hrd900
+  type: vless
+  server: 172.64.152.52
+  port: 443
+  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: cf.zhahui.de5.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.zhahui.de5.net
+- name: 🇨🇦 加拿大 (Canada) 18 - hrd900
+  type: ss
+  server: 51.222.200.165
+  port: 5000
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+  udp: true
 - name: 🇨🇦 加拿大 (Canada) 19 - hrd900
   type: vmess
   server: 23.162.200.198
@@ -191,92 +216,40 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 20 - hrd900
-  type: ss
-  server: 51.79.49.116
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 21 - hrd900
-  type: ss
-  server: 51.222.136.236
-  port: 8882
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
+  tls: false
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 22 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.222.12.127
+  port: 445
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 23 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  server: 51.79.64.198
+  port: 8119
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
   udp: true
-  tls: false
-  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 24 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 25 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 26 - hrd900
-  type: vmess
-  server: 23.162.200.198
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 27 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 28 - hrd900
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 29 - hrd900
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -288,7 +261,7 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 30 - hrd900
+- name: 🇨🇦 加拿大 (Canada) 25 - hrd900
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -298,43 +271,52 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 31 - hrd900
+- name: 🇨🇦 加拿大 (Canada) 26 - hrd900
   type: vless
-  server: 66.70.179.198
+  server: 162.159.130.234
   port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
   udp: true
   tls: true
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 32 - hrd900
-  type: ss
-  server: 51.79.85.185
-  port: 8118
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 33 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 34 - hrd900
+  servername: vp11.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /videos/forum
+    headers:
+      Host: vp11.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 27 - hrd900
   type: ss
   server: 149.22.95.183
   port: 443
   cipher: aes-128-gcm
   password: shadowsocks
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 35 - hrd900
+- name: 🇨🇦 加拿大 (Canada) 28 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 29 - hrd900
+  type: vless
+  server: 162.159.135.234
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp5.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /servicefp
+    headers:
+      Host: vp5.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 30 - hrd900
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -344,21 +326,17 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 36 - hrd900
-  type: ss
-  server: 51.79.64.198
-  port: 8119
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 31 - hrd900
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 37 - hrd900
-  type: ss
-  server: 51.222.141.125
-  port: 445
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-  udp: true
-- name: 🇨🇦 加拿大 (Canada) 38 - hrd900
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 32 - hrd900
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -370,7 +348,17 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 39 - hrd900
+- name: 🇨🇦 加拿大 (Canada) 33 - hrd900
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 34 - hrd900
   type: vmess
   server: 134.195.196.211
   port: 18000
@@ -380,6 +368,68 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 35 - hrd900
+  type: vless
+  server: 104.19.50.28
+  port: 443
+  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn-1fj.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn-1fj.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 36 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 37 - hrd900
+  type: vless
+  server: 8.35.211.188
+  port: 8443
+  uuid: 2b181a3a-c001-4145-845a-5d43a43837d5
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vpn-1fj.pages.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vpn-1fj.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 38 - hrd900
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 39 - hrd900
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp19.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /images/classify/dh
+    headers:
+      Host: vp19.1145678.xyz
 - name: 🇨🇦 加拿大 (Canada) 40 - hrd900
   type: vmess
   server: 134.195.196.211
@@ -391,6 +441,34 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 41 - hrd900
+  type: vless
+  server: 104.18.0.1
+  port: 443
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: all.speedtest03.ccwu.cc
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: all.speedtest03.ccwu.cc
+- name: 🇨🇦 加拿大 (Canada) 42 - hrd900
+  type: vless
+  server: saas.sin.fan
+  port: 443
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp22.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /playlist
+    headers:
+      Host: vp22.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 43 - hrd900
   type: vmess
   server: 23.162.200.198
   port: 18000
@@ -400,23 +478,6 @@ proxies:
   udp: true
   tls: false
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 42 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: false
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 43 - hrd900
-  type: ss
-  server: 51.222.200.165
-  port: 5000
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 44 - hrd900
   type: vmess
   server: 134.195.196.211
@@ -428,15 +489,19 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 45 - hrd900
-  type: vmess
-  server: 134.195.196.211
-  port: 18000
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 172.64.147.85
+  port: 443
+  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
   udp: true
-  tls: false
+  tls: true
   skip-cert-verify: true
+  servername: wallweb-av6.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: wallweb-av6.pages.dev
 - name: 🇨🇦 加拿大 (Canada) 46 - hrd900
   type: vmess
   server: 23.162.200.198
@@ -448,32 +513,105 @@ proxies:
   tls: false
   skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 47 - hrd900
-  type: vless
-  server: 66.70.179.198
-  port: 2053
-  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  reality-opts:
-    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 48 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 49 - hrd900
   type: ss
-  server: 51.222.12.127
+  server: 51.222.141.125
   port: 445
   cipher: aes-256-gcm
   password: zDNVedRFPQexG9v
   udp: true
-- name: 🇨🇦 加拿大 (Canada) 49 - hrd900
-  type: ss
-  server: 149.22.95.183
-  port: 443
-  cipher: aes-128-gcm
-  password: shadowsocks
-  udp: true
 - name: 🇨🇦 加拿大 (Canada) 50 - hrd900
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 51 - hrd900
+  type: vless
+  server: 162.159.135.234
+  port: 2096
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp8.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /p
+    headers:
+      Host: vp8.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 52 - hrd900
+  type: vmess
+  server: 23.162.200.198
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 53 - hrd900
+  type: vless
+  server: saas.sin.fan
+  port: 2053
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp11.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /videos/forum
+    headers:
+      Host: vp11.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 54 - hrd900
+  type: vless
+  server: 104.18.40.171
+  port: 443
+  uuid: af51de90-852d-4eb6-a0c3-9ecca170385e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wallweb-av6.pages.dev
+  network: ws
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: wallweb-av6.pages.dev
+- name: 🇨🇦 加拿大 (Canada) 55 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 56 - hrd900
   type: vless
   server: 66.70.179.198
   port: 2053
@@ -485,6 +623,161 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
   servername: www.cloudflare.com
   client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 57 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 58 - hrd900
+  type: vless
+  server: saas.sin.fan
+  port: 2096
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp13.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /index/content
+    headers:
+      Host: vp13.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 59 - hrd900
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 60 - hrd900
+  type: ss
+  server: 158.51.121.221
+  port: 19999
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  udp: true
+- name: 🇨🇦 加拿大 (Canada) 61 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 62 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 63 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 64 - hrd900
+  type: vless
+  server: 162.159.135.234
+  port: 2053
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp11.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /videos/forum
+    headers:
+      Host: vp11.1145678.xyz
+- name: 🇨🇦 加拿大 (Canada) 65 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 66 - hrd900
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 67 - hrd900
+  type: vless
+  server: 66.70.179.198
+  port: 2053
+  uuid: dc620cd6-a9d8-4a0f-8f18-006b895db77e
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  reality-opts:
+    public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 68 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 69 - hrd900
+  type: vmess
+  server: 134.195.196.211
+  port: 18000
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+  udp: true
+  tls: false
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 70 - hrd900
+  type: vless
+  server: saas.sin.fan
+  port: 2096
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: vp13.1145678.xyz
+  network: ws
+  ws-opts:
+    path: /index/content
+    headers:
+      Host: vp13.1145678.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -540,6 +833,26 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 48 - hrd900
   - 🇨🇦 加拿大 (Canada) 49 - hrd900
   - 🇨🇦 加拿大 (Canada) 50 - hrd900
+  - 🇨🇦 加拿大 (Canada) 51 - hrd900
+  - 🇨🇦 加拿大 (Canada) 52 - hrd900
+  - 🇨🇦 加拿大 (Canada) 53 - hrd900
+  - 🇨🇦 加拿大 (Canada) 54 - hrd900
+  - 🇨🇦 加拿大 (Canada) 55 - hrd900
+  - 🇨🇦 加拿大 (Canada) 56 - hrd900
+  - 🇨🇦 加拿大 (Canada) 57 - hrd900
+  - 🇨🇦 加拿大 (Canada) 58 - hrd900
+  - 🇨🇦 加拿大 (Canada) 59 - hrd900
+  - 🇨🇦 加拿大 (Canada) 60 - hrd900
+  - 🇨🇦 加拿大 (Canada) 61 - hrd900
+  - 🇨🇦 加拿大 (Canada) 62 - hrd900
+  - 🇨🇦 加拿大 (Canada) 63 - hrd900
+  - 🇨🇦 加拿大 (Canada) 64 - hrd900
+  - 🇨🇦 加拿大 (Canada) 65 - hrd900
+  - 🇨🇦 加拿大 (Canada) 66 - hrd900
+  - 🇨🇦 加拿大 (Canada) 67 - hrd900
+  - 🇨🇦 加拿大 (Canada) 68 - hrd900
+  - 🇨🇦 加拿大 (Canada) 69 - hrd900
+  - 🇨🇦 加拿大 (Canada) 70 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -595,5 +908,25 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 48 - hrd900
   - 🇨🇦 加拿大 (Canada) 49 - hrd900
   - 🇨🇦 加拿大 (Canada) 50 - hrd900
+  - 🇨🇦 加拿大 (Canada) 51 - hrd900
+  - 🇨🇦 加拿大 (Canada) 52 - hrd900
+  - 🇨🇦 加拿大 (Canada) 53 - hrd900
+  - 🇨🇦 加拿大 (Canada) 54 - hrd900
+  - 🇨🇦 加拿大 (Canada) 55 - hrd900
+  - 🇨🇦 加拿大 (Canada) 56 - hrd900
+  - 🇨🇦 加拿大 (Canada) 57 - hrd900
+  - 🇨🇦 加拿大 (Canada) 58 - hrd900
+  - 🇨🇦 加拿大 (Canada) 59 - hrd900
+  - 🇨🇦 加拿大 (Canada) 60 - hrd900
+  - 🇨🇦 加拿大 (Canada) 61 - hrd900
+  - 🇨🇦 加拿大 (Canada) 62 - hrd900
+  - 🇨🇦 加拿大 (Canada) 63 - hrd900
+  - 🇨🇦 加拿大 (Canada) 64 - hrd900
+  - 🇨🇦 加拿大 (Canada) 65 - hrd900
+  - 🇨🇦 加拿大 (Canada) 66 - hrd900
+  - 🇨🇦 加拿大 (Canada) 67 - hrd900
+  - 🇨🇦 加拿大 (Canada) 68 - hrd900
+  - 🇨🇦 加拿大 (Canada) 69 - hrd900
+  - 🇨🇦 加拿大 (Canada) 70 - hrd900
 rules:
 - MATCH,PROXIES
