@@ -7,7 +7,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 PL 01 - hrd900",
-        "🇵🇱 PL 02 - hrd900"
+        "🇵🇱 PL 02 - hrd900",
+        "🇵🇱 PL 03 - hrd900"
       ]
     },
     {
@@ -15,7 +16,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 PL 01 - hrd900",
-        "🇵🇱 PL 02 - hrd900"
+        "🇵🇱 PL 02 - hrd900",
+        "🇵🇱 PL 03 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
