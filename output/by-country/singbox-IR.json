@@ -6,14 +6,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01 - hrd900"
+        "🇮🇷 IR 01 - hrd900",
+        "🇮🇷 IR 02 - hrd900",
+        "🇮🇷 IR 03 - hrd900",
+        "🇮🇷 IR 04 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01 - hrd900"
+        "🇮🇷 IR 01 - hrd900",
+        "🇮🇷 IR 02 - hrd900",
+        "🇮🇷 IR 03 - hrd900",
+        "🇮🇷 IR 04 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },

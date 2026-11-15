@@ -6,14 +6,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 BR 01 - hrd900"
+        "🇧🇷 BR 01 - hrd900",
+        "🇧🇷 BR 02 - hrd900"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 BR 01 - hrd900"
+        "🇧🇷 BR 01 - hrd900",
+        "🇧🇷 BR 02 - hrd900"
       ],
       "url": "https://www.google.com/generate_204"
     },
