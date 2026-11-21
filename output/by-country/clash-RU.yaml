@@ -6,13 +6,16 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hrd900
   type: vless
-  server: 136.148.83.69
+  server: 136.234.9.19
   port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: d92038b6-b470-4267-9c69-2c649bf3f4a4
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  reality-opts:
+    public-key: 43bHrvqzL5Sw8lvtDSE3LAlp_0WbixVc7nYcAf17bhg
+  servername: 8ba6c3t.nl2.h1clayd.click
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - hrd900
   type: vless
   server: 136.148.83.69
@@ -23,6 +26,33 @@ proxies:
   skip-cert-verify: true
   servername: szqbx-ru-77dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 03 - hrd900
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 04 - hrd900
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hrd900
+  type: vless
+  server: 136.148.83.69
+  port: 443
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 06 - hrd900
   type: vless
   server: 147.45.175.81
   port: 443
@@ -36,29 +66,6 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 04 - hrd900
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hrd900
-  type: vless
-  server: 194.87.131.9
-  port: 443
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: quay.gerqix.online
-  network: ws
-  ws-opts:
-    path: api/de2/stream
-    headers:
-      Host: 194.87.131.9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +76,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 04 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 05 - hrd900
+  - 🇷🇺 俄罗斯 (Russia) 06 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -79,5 +87,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 04 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 05 - hrd900
+  - 🇷🇺 俄罗斯 (Russia) 06 - hrd900
 rules:
 - MATCH,PROXIES
