@@ -6,21 +6,7 @@ log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - hrd900
   type: vless
-  server: 104.19.12.94
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 02 - hrd900
-  type: vless
-  server: 104.18.32.47
+  server: 172.64.155.209
   port: 443
   uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
   udp: true
@@ -32,137 +18,48 @@ proxies:
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
       Host: sinavm2.soft10.ir
+- name: 🌐 其他地区 (Other) 02 - hrd900
+  type: vless
+  server: 104.21.70.21
+  port: 443
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: jp3.yohototo.top
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 - name: 🌐 其他地区 (Other) 03 - hrd900
-  type: vmess
-  server: 104.21.91.53
-  port: 8443
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: 188.114.99.137
+  port: 80
+  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
   udp: true
-  tls: true
+  tls: false
   skip-cert-verify: true
-  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: suh.cryptofront.uk
 - name: 🌐 其他地区 (Other) 04 - hrd900
-  type: vmess
-  server: 104.21.0.1
-  port: 2083
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  server: www.speedtest.net
+  port: 443
+  uuid: ec23f217-23a1-4f62-b98d-ba56070de89c
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: or3.sfacg.uk
+  servername: wallweb4.pages.dev
   network: ws
   ws-opts:
-    path: /or3
+    path: /fp=chrome
     headers:
-      Host: or3.sfacg.uk
+      Host: wallweb4.pages.dev
 - name: 🌐 其他地区 (Other) 05 - hrd900
-  type: vless
-  server: 104.16.111.195
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 06 - hrd900
-  type: vless
-  server: 172.67.156.147
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 07 - hrd900
-  type: vless
-  server: 162.159.254.3
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 08 - hrd900
-  type: vless
-  server: 172.67.139.189
-  port: 443
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: fr-free.fastestrelay.com
-  network: ws
-  ws-opts:
-    path: /700gvl
-    headers:
-      Host: fr-free.fastestrelay.com
-- name: 🌐 其他地区 (Other) 09 - hrd900
-  type: vless
-  server: 104.24.0.1
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 10 - hrd900
-  type: vless
-  server: 104.19.48.107
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 11 - hrd900
-  type: vless
-  server: 104.17.50.53
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 12 - hrd900
   type: vless
   server: 172.64.155.209
   port: 443
@@ -176,91 +73,23 @@ proxies:
     path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
     headers:
       Host: sinavm3.soft10.ir
-- name: 🌐 其他地区 (Other) 13 - hrd900
-  type: vless
-  server: 104.24.31.89
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: 🌐 其他地区 (Other) 06 - hrd900
+  type: vmess
+  server: 188.114.96.3
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 14 - hrd900
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 15 - hrd900
-  type: vless
-  server: 104.19.164.155
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 16 - hrd900
-  type: vless
-  server: 188.114.98.0
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: payablemeta.cleanfoodshop.org
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: payablemeta.cleanfoodshop.org
-- name: 🌐 其他地区 (Other) 17 - hrd900
-  type: vless
-  server: 172.64.190.13
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 18 - hrd900
-  type: vless
-  server: 104.21.219.160
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: jp3.yohototo.top
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🌐 其他地区 (Other) 19 - hrd900
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 07 - hrd900
   type: vmess
   server: chatgpt.com
   port: 8443
@@ -276,20 +105,36 @@ proxies:
     path: /lMnsZUN4/
     headers:
       Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 20 - hrd900
-  type: vless
-  server: 104.21.6.186
-  port: 443
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+- name: 🌐 其他地区 (Other) 08 - hrd900
+  type: vmess
+  server: 104.21.91.53
+  port: 8443
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: jp3.yohototo.top
+  servername: v2ray1.dozapp.xyz
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /lMnsZUN4/
     headers:
-      Host: jp3.yohototo.top
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 09 - hrd900
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: payablemeta.cleanfoodshop.org
+  network: ws
+  ws-opts:
+    path: /media/ws/
+    headers:
+      Host: payablemeta.cleanfoodshop.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -304,17 +149,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - hrd900
   - 🌐 其他地区 (Other) 08 - hrd900
   - 🌐 其他地区 (Other) 09 - hrd900
-  - 🌐 其他地区 (Other) 10 - hrd900
-  - 🌐 其他地区 (Other) 11 - hrd900
-  - 🌐 其他地区 (Other) 12 - hrd900
-  - 🌐 其他地区 (Other) 13 - hrd900
-  - 🌐 其他地区 (Other) 14 - hrd900
-  - 🌐 其他地区 (Other) 15 - hrd900
-  - 🌐 其他地区 (Other) 16 - hrd900
-  - 🌐 其他地区 (Other) 17 - hrd900
-  - 🌐 其他地区 (Other) 18 - hrd900
-  - 🌐 其他地区 (Other) 19 - hrd900
-  - 🌐 其他地区 (Other) 20 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -329,16 +163,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 07 - hrd900
   - 🌐 其他地区 (Other) 08 - hrd900
   - 🌐 其他地区 (Other) 09 - hrd900
-  - 🌐 其他地区 (Other) 10 - hrd900
-  - 🌐 其他地区 (Other) 11 - hrd900
-  - 🌐 其他地区 (Other) 12 - hrd900
-  - 🌐 其他地区 (Other) 13 - hrd900
-  - 🌐 其他地区 (Other) 14 - hrd900
-  - 🌐 其他地区 (Other) 15 - hrd900
-  - 🌐 其他地区 (Other) 16 - hrd900
-  - 🌐 其他地区 (Other) 17 - hrd900
-  - 🌐 其他地区 (Other) 18 - hrd900
-  - 🌐 其他地区 (Other) 19 - hrd900
-  - 🌐 其他地区 (Other) 20 - hrd900
 rules:
 - MATCH,PROXIES
