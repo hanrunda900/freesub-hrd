@@ -6,14 +6,27 @@ log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - hrd900
   type: vless
-  server: 136.148.83.70
+  server: 194.26.229.207
+  port: 4100
+  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
+  udp: true
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /v1
+    headers:
+      Host: live.ok.ru
+- name: 🇷🇺 俄罗斯 (Russia) 02 - hrd900
+  type: vless
+  server: 136.148.83.69
   port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
+  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
   udp: true
   tls: true
   skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 02 - hrd900
+  servername: szqbx-ru-77dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 03 - hrd900
   type: vless
   server: 136.148.83.71
   port: 443
@@ -22,20 +35,16 @@ proxies:
   tls: true
   skip-cert-verify: true
   servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 03 - hrd900
-  type: vless
-  server: 194.26.229.207
-  port: 2200
-  uuid: f2d2907c-1d74-43eb-8fd2-fc55dfd92427
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: 194.26.229.207
 - name: 🇷🇺 俄罗斯 (Russia) 04 - hrd900
+  type: vless
+  server: 136.148.83.71
+  port: 443
+  uuid: 00000000-0000-0001-0000-000000000000
+  udp: true
+  tls: true
+  skip-cert-verify: true
+  servername: wccfu-ru-79dc.my-fade.cloud
+- name: 🇷🇺 俄罗斯 (Russia) 05 - hrd900
   type: vless
   server: 194.26.229.207
   port: 2200
@@ -48,23 +57,7 @@ proxies:
     path: /v1
     headers:
       Host: rzd.ru
-- name: 🇷🇺 俄罗斯 (Russia) 05 - hrd900
-  type: vless
-  server: 136.148.83.71
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
 - name: 🇷🇺 俄罗斯 (Russia) 06 - hrd900
-  type: ss
-  server: 194.87.69.12
-  port: 18443
-  cipher: aes-256-gcm
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 07 - hrd900
   type: vless
   server: 194.26.229.207
   port: 2200
@@ -77,39 +70,7 @@ proxies:
     path: /v1
     headers:
       Host: 194.26.229.207
-- name: 🇷🇺 俄罗斯 (Russia) 08 - hrd900
-  type: vless
-  server: 136.148.83.69
-  port: 443
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 09 - hrd900
-  type: vless
-  server: 136.148.83.70
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: aszbk-ru-78dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 10 - hrd900
-  type: vless
-  server: 147.45.221.225
-  port: 443
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: 147.45.221.225
-- name: 🇷🇺 俄罗斯 (Russia) 11 - hrd900
+- name: 🇷🇺 俄罗斯 (Russia) 07 - hrd900
   type: vless
   server: 196.196.148.85
   port: 443
@@ -121,7 +82,7 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 12 - hrd900
+- name: 🇷🇺 俄罗斯 (Russia) 08 - hrd900
   type: vless
   server: 79.182.70.232
   port: 443
@@ -133,81 +94,21 @@ proxies:
     public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
   servername: 5d0319t.nl7.h1clayd.click
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 - hrd900
-  type: vless
-  server: 136.148.83.71
-  port: 443
-  uuid: 00000000-0000-0001-0000-000000000000
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: wccfu-ru-79dc.my-fade.cloud
-- name: 🇷🇺 俄罗斯 (Russia) 14 - hrd900
-  type: vless
-  server: 194.26.229.207
-  port: 2200
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: rzd.ru
-- name: 🇷🇺 俄罗斯 (Russia) 15 - hrd900
-  type: vless
-  server: 194.26.229.207
-  port: 4100
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: 🇷🇺 俄罗斯 (Russia) 16 - hrd900
+- name: 🇷🇺 俄罗斯 (Russia) 09 - hrd900
   type: ss
   server: 194.87.69.12
   port: 18443
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 17 - hrd900
-  type: vless
-  server: 194.26.229.207
-  port: 4100
-  uuid: 026ecbd6-2838-40f6-b530-d2c303c4f629
-  udp: true
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /v1
-    headers:
-      Host: live.ok.ru
-- name: 🇷🇺 俄罗斯 (Russia) 18 - hrd900
+- name: 🇷🇺 俄罗斯 (Russia) 10 - hrd900
   type: ss
   server: 185.22.152.168
   port: 18443
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   udp: true
-- name: 🇷🇺 俄罗斯 (Russia) 19 - hrd900
-  type: vless
-  server: 195.206.235.232
-  port: 443
-  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  reality-opts:
-    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
-  servername: 5d0319t.nl7.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 20 - hrd900
+- name: 🇷🇺 俄罗斯 (Russia) 11 - hrd900
   type: vless
   server: 147.45.175.81
   port: 443
@@ -221,13 +122,6 @@ proxies:
     path: /wsru
     headers:
       Host: xsru2.freeddns.org
-- name: 🇷🇺 俄罗斯 (Russia) 21 - hrd900
-  type: ss
-  server: 130.49.189.158
-  port: 43558
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-  udp: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -244,16 +138,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 10 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 11 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 12 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 13 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 14 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 15 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 16 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 17 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 18 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 19 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 20 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 21 - hrd900
 - name: AUTO
   type: url-test
   url: https://www.google.com/generate_204
@@ -270,15 +154,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 10 - hrd900
   - 🇷🇺 俄罗斯 (Russia) 11 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 12 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 13 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 14 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 15 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 16 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 17 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 18 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 19 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 20 - hrd900
-  - 🇷🇺 俄罗斯 (Russia) 21 - hrd900
 rules:
 - MATCH,PROXIES
